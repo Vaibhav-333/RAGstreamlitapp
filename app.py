@@ -11,14 +11,14 @@ from docx import Document
 from nltk.tokenize import sent_tokenize
 from langdetect import detect
 
-# Download punkt if not already available
+
 nltk.download('punkt')
 
 st.set_page_config(page_title="Chat with Your Documents", layout="wide")
 
 st.title("📄 Chat with Your Documents")
 
-# Sidebar settings
+
 with st.sidebar:
     st.header("📚 Upload documents")
     uploaded_files = st.file_uploader("Upload files", accept_multiple_files=True, type=["pdf", "docx", "txt"])
